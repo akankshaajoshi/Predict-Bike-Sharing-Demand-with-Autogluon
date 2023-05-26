@@ -23,11 +23,11 @@ TODO: The model scored 0.62685 without the optimized hyperparameters, however af
 TODO: Feature engineering. As it is evident from the model scores, there was a drastic improvement in the model after feature engineering. If given more time with the dataset, I would normalize the dataset using standard scaler and encode the categorical variables using one hot encoding.
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
-|model|use_orig_features|max_base_models_per_type|max_base_models|score|
+|model|hpo1|hpo2|hpo3|score|
 |--|--|--|--|--|
-|initial|False|25|5|1.79958|
-|add_features|False|25|5|0.66046|
-|hpo|False|25|5|0.61717|
+|initial_model|default_vals|default_vals|default_vals|1.80114|
+|add_features_model|default_vals|default_vals|default_vals|00.62685|
+|hpo_model|GBM: num_leaves: lower=26, upper=66|NN: dropout_prob: 0.0, 0.5|GBM: num_boost_round: 100	|0.49818|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
@@ -42,4 +42,4 @@ TODO: Replace the image below with your own.
 ![model_test_score.png](img/model_test_score.png)
 
 ## Summary
-TODO: Predict bike sharing demand project model using WeightedEnsemble_L3 algorithm helps to achieve a score of 0.61717 on the prediction. 
+TODO: Predict bike sharing demand project model using WeightedEnsemble_L3 algorithm helps to achieve a score of 0.49818 on the prediction. 

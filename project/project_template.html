@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>284788</title>
+  <title>284810</title>
   <style>
     html {
       line-height: 1.5;
@@ -4583,20 +4583,18 @@ submission_new_hpo.csv       2023-05-19 13:19:59  new features with hyperparamet
 <section id="hyperparameter-table" class="cell markdown" id="F_Y0aOTY3RLN">
 <h3>Hyperparameter table</h3>
 </section>
-<div class="cell code" data-execution_count="60" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:143}" id="wbhhoexS3RLO" data-outputId="371c8abc-35a1-4ee4-a477-d0b43417ec22">
+<div class="cell code" data-execution_count="2" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:143}" id="wbhhoexS3RLO" data-outputId="371c8abc-35a1-4ee4-a477-d0b43417ec22">
 <div class="sourceCode" id="cb83"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The 3 hyperparameters we tuned with the kaggle score as the result</span></span>
-<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a>pd.DataFrame({</span>
-<span id="cb83-3"><a href="#cb83-3" aria-hidden="true" tabindex="-1"></a> <span class="st">&quot;model&quot;</span>: [<span class="st">&quot;initial_model&quot;</span>, <span class="st">&quot;add_features_model&quot;</span>, <span class="st">&quot;hpo_model&quot;</span>],</span>
-<span id="cb83-4"><a href="#cb83-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;hpo1&quot;</span>: [<span class="st">&#39;default_vals&#39;</span>, <span class="st">&#39;default_vals&#39;</span>, <span class="st">&#39;GBM: num_leaves: lower=26, upper=66&#39;</span>],</span>
-<span id="cb83-5"><a href="#cb83-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;hpo2&quot;</span>: [<span class="st">&#39;default_vals&#39;</span>, <span class="st">&#39;default_vals&#39;</span>, <span class="st">&#39;NN: dropout_prob: 0.0, 0.5&#39;</span>],</span>
-<span id="cb83-6"><a href="#cb83-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;hpo3&quot;</span>: [<span class="st">&#39;default_vals&#39;</span>, <span class="st">&#39;default_vals&#39;</span>, <span class="st">&#39;GBM: num_boost_round: 100&#39;</span>],</span>
-<span id="cb83-7"><a href="#cb83-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;score&quot;</span>: [<span class="fl">1.39920</span>,  <span class="fl">0.47165</span>, <span class="fl">0.50893</span>]</span>
-<span id="cb83-8"><a href="#cb83-8" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div>
-<div class="output execute_result" data-execution_count="60">
-
-  <div id="df-fd4bcd04-7165-47dd-93cc-cb7e1708f6f9">
-    <div class="colab-df-container">
-      <div>
+<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb83-3"><a href="#cb83-3" aria-hidden="true" tabindex="-1"></a>pd.DataFrame({</span>
+<span id="cb83-4"><a href="#cb83-4" aria-hidden="true" tabindex="-1"></a> <span class="st">&quot;model&quot;</span>: [<span class="st">&quot;initial_model&quot;</span>, <span class="st">&quot;add_features_model&quot;</span>, <span class="st">&quot;hpo_model&quot;</span>],</span>
+<span id="cb83-5"><a href="#cb83-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;hpo1&quot;</span>: [<span class="st">&#39;default_vals&#39;</span>, <span class="st">&#39;default_vals&#39;</span>, <span class="st">&#39;GBM: num_leaves: lower=26, upper=66&#39;</span>],</span>
+<span id="cb83-6"><a href="#cb83-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;hpo2&quot;</span>: [<span class="st">&#39;default_vals&#39;</span>, <span class="st">&#39;default_vals&#39;</span>, <span class="st">&#39;NN: dropout_prob: 0.0, 0.5&#39;</span>],</span>
+<span id="cb83-7"><a href="#cb83-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;hpo3&quot;</span>: [<span class="st">&#39;default_vals&#39;</span>, <span class="st">&#39;default_vals&#39;</span>, <span class="st">&#39;GBM: num_boost_round: 100&#39;</span>],</span>
+<span id="cb83-8"><a href="#cb83-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;score&quot;</span>:  [<span class="fl">1.80114</span>, <span class="fl">0.62685</span>, <span class="fl">0.49818</span>]</span>
+<span id="cb83-9"><a href="#cb83-9" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div>
+<div class="output execute_result" data-execution_count="2">
+<div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -4628,7 +4626,7 @@ submission_new_hpo.csv       2023-05-19 13:19:59  new features with hyperparamet
       <td>default_vals</td>
       <td>default_vals</td>
       <td>default_vals</td>
-      <td>1.39920</td>
+      <td>1.80114</td>
     </tr>
     <tr>
       <th>1</th>
@@ -4636,7 +4634,7 @@ submission_new_hpo.csv       2023-05-19 13:19:59  new features with hyperparamet
       <td>default_vals</td>
       <td>default_vals</td>
       <td>default_vals</td>
-      <td>0.47165</td>
+      <td>0.62685</td>
     </tr>
     <tr>
       <th>2</th>
@@ -4644,87 +4642,11 @@ submission_new_hpo.csv       2023-05-19 13:19:59  new features with hyperparamet
       <td>GBM: num_leaves: lower=26, upper=66</td>
       <td>NN: dropout_prob: 0.0, 0.5</td>
       <td>GBM: num_boost_round: 100</td>
-      <td>0.50893</td>
+      <td>0.49818</td>
     </tr>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-fd4bcd04-7165-47dd-93cc-cb7e1708f6f9')"
-              title="Convert this dataframe to an interactive table."
-              style="display:none;">
-        
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-       width="24px">
-    <path d="M0 0h24v24H0V0z" fill="none"/>
-    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
-  </svg>
-      </button>
-      
-  <style>
-    .colab-df-container {
-      display:flex;
-      flex-wrap:wrap;
-      gap: 12px;
-    }
-
-    .colab-df-convert {
-      background-color: #E8F0FE;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      fill: #1967D2;
-      height: 32px;
-      padding: 0 0 0 0;
-      width: 32px;
-    }
-
-    .colab-df-convert:hover {
-      background-color: #E2EBFA;
-      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-      fill: #174EA6;
-    }
-
-    [theme=dark] .colab-df-convert {
-      background-color: #3B4455;
-      fill: #D2E3FC;
-    }
-
-    [theme=dark] .colab-df-convert:hover {
-      background-color: #434B5C;
-      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-      fill: #FFFFFF;
-    }
-  </style>
-
-      <script>
-        const buttonEl =
-          document.querySelector('#df-fd4bcd04-7165-47dd-93cc-cb7e1708f6f9 button.colab-df-convert');
-        buttonEl.style.display =
-          google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-        async function convertToInteractive(key) {
-          const element = document.querySelector('#df-fd4bcd04-7165-47dd-93cc-cb7e1708f6f9');
-          const dataTable =
-            await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                     [key], {});
-          if (!dataTable) return;
-
-          const docLinkHtml = 'Like what you see? Visit the ' +
-            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-            + ' to learn more about interactive tables.';
-          element.innerHTML = '';
-          dataTable['output_type'] = 'display_data';
-          await google.colab.output.renderOutput(dataTable, element);
-          const docLink = document.createElement('div');
-          docLink.innerHTML = docLinkHtml;
-          element.appendChild(docLink);
-        }
-      </script>
-    </div>
-  </div>
-  
 </div>
 </div>
 </body>

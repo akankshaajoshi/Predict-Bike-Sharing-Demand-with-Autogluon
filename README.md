@@ -10,8 +10,11 @@ Bike sharing is a regression time-series problem which predicts the count of bik
 Multiple models are evaluated with the presets achieving best accuracy over a time limit of 600 seconds. Final prediction scores are evaluated and it is seen that the ##hyperparameter optimized model performs better than the other models. Thus, it's used to make prediction using WeightedEnsemble_L3. 
 
 Scores achieved on the models are:
+
 On the training set
+
 ![model_train_score](https://github.com/akankshaajoshi/Predict-Bike-Sharing-Demand-with-Autogluon/assets/91690660/f35fc805-f18d-4c72-9884-13a1d6ea79c0)
 
 On the test set
+
 ![model_test_score](https://github.com/akankshaajoshi/Predict-Bike-Sharing-Demand-with-Autogluon/assets/91690660/cc3805e3-87d6-4b6b-9667-457df25a8a6c)
